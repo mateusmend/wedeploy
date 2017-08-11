@@ -4,9 +4,6 @@ form.addEventListener('submit', function(e) {
 	e.preventDefault();
 
 // Insert save data method below
-
-// Insert save data method above
-});
 WeDeploy
     .data('db-<projectID>.wedeploy.io')
     .create('tasks', {name: form.item.value })
@@ -18,3 +15,5 @@ WeDeploy
     .catch(function(error) {
         console.error(error);
     });
+// Insert save data method above
+});
