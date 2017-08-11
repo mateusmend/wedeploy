@@ -14,3 +14,14 @@ function appendTasks(tasks) {
 
 	list.innerHTML = taskList;
 }
+WeDeploy
+    .data('db-<projectID>.wedeploy.io')
+    .orderBy('id', 'desc')
+    .limit(5)
+    .get('tasks')
+    .then(function(response) {
+        appendTasks(response);
+    })
+    .catch(function(error) {
+        console.error(error);
+    });
